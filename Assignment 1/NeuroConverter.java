@@ -5,6 +5,7 @@ public class NeuroConverter {
         Scanner scanner = new Scanner(System.in);
         System.out.println("What is your amount?: ");
         double userAmount = scanner.nextDouble();
+        scanner.close();
         neuroConverter(userAmount);
     }
 
