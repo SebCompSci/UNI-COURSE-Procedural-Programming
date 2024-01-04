@@ -18,7 +18,8 @@ public class NeuroConverter {
     }
 
     public static void neuroConverter(double amount) {
-        //Calculates the optimal amount of Neurocurrency for the given amount
+        //Takes a double containing the total amount of Neuro's entered.
+        //Calculates the optimal amount of Neurocurrency for the given amount.
         //May not use conditionals or loops yet.
         //Neurocurrency: 1 whole, 49 cents, 9 cents, and 1 cent.
 
