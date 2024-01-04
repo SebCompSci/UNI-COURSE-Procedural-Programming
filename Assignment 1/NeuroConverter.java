@@ -14,31 +14,34 @@ public class NeuroConverter {
         System.out.println("What is your amount?: ");
         double userAmount = scanner.nextDouble();
         scanner.close();
-        neuroConverter(userAmount);
+        converter(userAmount);
+        // System.out.println((int) (0.010000 / 0.01));
     }
 
-    public static void neuroConverter(double amount) {
+    public static void converter(double amount) {
         //Takes a double containing the total amount of Neuro's entered.
         //Calculates the optimal amount of Neurocurrency for the given amount.
         //May not use conditionals or loops yet.
         //Neurocurrency: 1 whole, 49 cents, 9 cents, and 1 cent.
 
-        double remainder;
-        int wholeNeuro = (int) amount; //Whole Neuro's.
-        remainder = amount % 1;
+        int intAmount = (int) (amount * 100);
+        int remainder;
 
-        int fortyNineCent = (int) (remainder / 0.49); //49 cents.
-        remainder %= 0.49;
+        int wholeNeuro = (int) intAmount / 100; //Whole Neuro's.
+        remainder = intAmount % 100;
 
-        int nineCent = (int) (remainder / 0.9); //9 cents.
-        remainder %= 0.9;
+        int fortyNineCent = (int) remainder / 49; //Forty nine cents.
+        remainder %= 49;
 
-        int oneCent = (int) (remainder / 0.01); //1 cents.
+        int nineCent = (int) remainder / 9; //Nine cents.
+        remainder %= 9;
 
-        System.out.println("Whole Neuro's : " + wholeNeuro);
-        System.out.println("49 Cents : " + fortyNineCent);
-        System.out.println("9 Cents : " + nineCent);
-        System.out.println("1 cents : " + oneCent);
+        int oneCent = remainder; //One cent.
+
+        System.out.println(wholeNeuro);
+        System.out.println(fortyNineCent);
+        System.out.println(nineCent);
+        System.out.println(oneCent);
     }
 
 }
