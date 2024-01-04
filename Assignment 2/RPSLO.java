@@ -1,3 +1,20 @@
+/*
+ * Assignment 2: Rock Paper Scissors Lizard Spock.
+ * Develop a program that lets the user play RPSLO against the computer (without using loops yet).
+ * The rules are:
+ *      Scissors cut Paper
+ *      Paper covers Rock
+ *      Rock crushes Lizard
+ *      Lizard poisons Spock
+ *      Spock smashes Scissors
+ *      Scissors decapitate Lizard
+ *      Lizard eats Paper
+ *      Paper disproves Spock
+ *      Spock vaporizes Rock
+ *      Rock crushes Scissors
+ * The program should ask the user to enter a play, and generate a random play for the computer, compare the two and announce a winner.
+ */
+
 import java.util.Scanner;
 import java.util.Random;
 
@@ -11,8 +28,10 @@ public class RPSLO {
     }
 
     public static void game(String userPlay) {
-        //The RPSLO game.
-        //May not use loop yet.
+        //Takes a String containing the letter of the user's play.
+        //Generates a random play for the computer.
+        //Compares the userPlay with the computerPlay and announces a winner.
+
         Random rand = new Random();
         int computerRandInt = rand.nextInt(5);
         String[] possiblePlays = {"R", "P", "S", "L", "O"};
