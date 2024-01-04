@@ -1,3 +1,11 @@
+/*
+ * Assignment 1: Introducing the Neuro currency
+ * There is a new virtual currency called 'Neuro'. 
+ * It only uses the following coins: 1 whole neuro, 49 cents, 9 cents, and 1 cent.
+ * Write a program that lets a user enter a double value representing a total in Neuro's.
+ * The program should return the optimal amount of each coin (the user gets the minimum amount of coins possible).
+ */
+
 import java.util.Scanner;
 
 public class NeuroConverter {
