@@ -1,5 +1,6 @@
 /*
  * Assignment 1: Introducing the Neuro currency
+ * Goal: Learning and using variables and methods.
  * There is a new virtual currency called 'Neuro'. 
  * It only uses the following coins: 1 whole neuro, 49 cents, 9 cents, and 1 cent.
  * Write a program that lets a user enter a double value representing a total in Neuro's.

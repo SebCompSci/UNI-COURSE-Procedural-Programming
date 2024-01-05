@@ -1,5 +1,6 @@
 /*
  * Assignment 3: Cool Numbers.
+ * Goal: Learning and using loops.
  * The program should read 3 integers (a, b, and n), given 'n', the program will count all possible 'cool' numbers between 'a' and 'b'.
  * Given a (non-zero) positive integer 'n' a number is considered 'cool' if 'n' is divisible by each of the number's digit without remainder.
  */

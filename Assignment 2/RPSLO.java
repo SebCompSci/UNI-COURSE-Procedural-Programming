@@ -1,5 +1,6 @@
 /*
  * Assignment 2: Rock Paper Scissors Lizard Spock.
+ * Goal: Learning and using conditionals.
  * Develop a program that lets the user play RPSLO against the computer (without using loops yet).
  * The rules are:
  *      Scissors cut Paper
