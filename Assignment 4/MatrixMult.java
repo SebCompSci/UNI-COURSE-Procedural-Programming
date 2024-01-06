@@ -14,7 +14,7 @@ public class MatrixMult {
 
         //Checks if multiplication is legal (Amount of columns of 'firstMatrix' must be equal to amount of rows of 'secondMatrix').
         boolean isLegal = false;
-        if(firstMatrix[0].length == secondMatrix.length) { //Assumes that matrices are rectangle shaped.
+        if(firstMatrix[0].length == secondMatrix.length) {
             isLegal = true;
         }
 
